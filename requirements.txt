@@ -1,0 +1,35 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# ── Web Framework ─────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+pydantic==2.7.1
+pydantic-settings==2.3.0
+python-multipart==0.0.9
+
+# ── PDF Parsing ───────────────────────────────────────
+PyMuPDF==1.24.5
+
+# ── Arabic NLP (Raw Text Only) ────────────────────────
+arabic-reshaper==3.0.0
+python-bidi==0.4.2
+
+# ── Text Chunking ─────────────────────────────────────
+langchain==0.2.5
+langchain-text-splitters==0.2.1
+
+# ── Embeddings ────────────────────────────────────────
+sentence-transformers==3.0.1
+torch==2.3.1+cpu
+transformers==4.41.2
+
+# ── Vector Database ───────────────────────────────────
+chromadb==0.5.3
+
+# ── LLM Providers ─────────────────────────────────────
+openai==1.35.7
+groq==0.9.0
+
+# ── Utilities ─────────────────────────────────────────
+requests==2.32.3
+httpx==0.27.0
