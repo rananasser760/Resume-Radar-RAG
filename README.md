@@ -326,15 +326,15 @@ https://github.com/rananasser760/Resume-Radar-RAG
 
 *Built with FastAPI · ChromaDB · sentence-transformers · Docker*
 
-# 👩‍💻 Author
+# 👩‍💻 Team Members
 
 Developed by:
-Rana Nasser
-Ahmed Khaled
-AbdElRahman Taher
-Mohamed Saad
-Mohamed Amir
-Mohamed Khaled
+- Rana Nasser 
+- Ahmed Khaled 
+- AbdElRahman Taher 
+- Mohamed Saad 
+- Mohamed Amir 
+- Mohamed Khaled 
 
 Computer Science Student | AI & Software Development Enthusiast
 
