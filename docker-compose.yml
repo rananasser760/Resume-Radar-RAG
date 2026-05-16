@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  ResumeRadar:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ResumeRadar_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./raw_data:/app/raw_data
+      - chroma_data:/app/chroma_db
+      - ./app/static:/app/app/static
+      - hf_cache:/root/.cache/huggingface
+    env_file:
+      - .env
+    environment:
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+volumes:
+  chroma_data:
+    driver: local
+  hf_cache:
+    driver: local
